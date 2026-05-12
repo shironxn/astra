@@ -3,7 +3,7 @@ package config
 import (
 	"net/http"
 
-	"github.com/shironxn/go-clean-arch/internal/domain"
+	"github.com/shironxn/astra/internal/domain"
 )
 
 type Server struct {

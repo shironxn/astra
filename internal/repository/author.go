@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/shironxn/go-clean-arch/internal/domain"
+	"github.com/shironxn/astra/internal/domain"
 )
 
 type AuthorRepository struct {

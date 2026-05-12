@@ -1,4 +1,4 @@
-module github.com/shironxn/go-clean-arch
+module github.com/shironxn/astra
 
 go 1.22.4
 

@@ -1,14 +1,9 @@
-BIN := main
+BIN := astra
 BIN_DIR := ./bin
 TMP_DIR := ./tmp
-DOCKER_COMPOSE := docker-compose
 
-# Database configuration (change as needed)
 DB_DRIVER := mysql
-DB_USER := shironxn
-DB_PASSWORD := 303200
-DB_NAME := bookstore
-DB_STRING := $(DB_USER):$(DB_PASSWORD)@/$(DB_NAME)
+DB_STRING := $(or $(DB_USER),root):$(or $(DB_PASS),)@tcp($(or $(DB_HOST),localhost):$(or $(DB_PORT),3306))/$(or $(DB_NAME),bookstore)?parseTime=true
 MIGRATION_DIR := ./internal/config/db/migrations
 
 # ==================================================================================== #
@@ -82,13 +77,3 @@ build: ## Build the project
 run: tidy build ## Run the project
 	@echo "Running the project..."
 	@$(BIN_DIR)/$(BIN)
-
-.PHONY: docker-up
-docker-up: ## Start Docker Compose services
-	@echo "Starting Docker Compose services..."
-	@$(DOCKER_COMPOSE) up -d
-
-.PHONY: docker-down
-docker-down: ## Stop Docker Compose services
-	@echo "Stopping Docker Compose services..."
-	@$(DOCKER_COMPOSE) down

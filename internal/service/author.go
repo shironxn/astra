@@ -1,6 +1,6 @@
 package service
 
-import "github.com/shironxn/go-clean-arch/internal/domain"
+import "github.com/shironxn/astra/internal/domain"
 
 type AuthorService struct {
 	repository domain.AuthorRepository

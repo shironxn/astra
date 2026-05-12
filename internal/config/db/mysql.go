@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/shironxn/go-clean-arch/internal/config"
+	"github.com/shironxn/astra/internal/config"
 )
 
 type Databse struct {

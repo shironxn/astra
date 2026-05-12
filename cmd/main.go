@@ -3,11 +3,11 @@ package main
 import (
 	"log"
 
-	"github.com/shironxn/go-clean-arch/internal/config"
-	"github.com/shironxn/go-clean-arch/internal/config/db"
-	"github.com/shironxn/go-clean-arch/internal/handler"
-	"github.com/shironxn/go-clean-arch/internal/repository"
-	"github.com/shironxn/go-clean-arch/internal/service"
+	"github.com/shironxn/astra/internal/config"
+	"github.com/shironxn/astra/internal/config/db"
+	"github.com/shironxn/astra/internal/handler"
+	"github.com/shironxn/astra/internal/repository"
+	"github.com/shironxn/astra/internal/service"
 )
 
 func main() {

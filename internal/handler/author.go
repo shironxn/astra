@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/shironxn/go-clean-arch/internal/domain"
+	"github.com/shironxn/astra/internal/domain"
 )
 
 type AuthorHandler struct {
