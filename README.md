@@ -5,7 +5,7 @@
 
 A REST API for managing authors and books, built with Go following Clean Architecture principles. No framework — uses stdlib `net/http` with Go 1.22+ method+path routing.
 
-![Astra Thumbnail](assets/thumbnail.gif)
+<img src="assets/thumbnail.gif" alt="Astra Thumbnail" width="100%">
 
 ## Tech Stack
 
