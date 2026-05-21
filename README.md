@@ -28,7 +28,7 @@ A REST API for managing authors and books, built with Go following Clean Archite
 
    ```bash
    git clone https://github.com/shironxn/astra
-   cd go-clean-arch
+       cd astra
    ```
 
 2. Set up environment variables:
@@ -108,10 +108,13 @@ A REST API for managing authors and books, built with Go following Clean Archite
 │   └── service/
 │       ├── author.go        # Author business logic
 │       └── book.go          # Book business logic
+├── assets/
+│   └── thumbnail.gif
 ├── .env.example
 ├── .gitignore
 ├── go.mod
 ├── go.sum
+├── LICENSE
 ├── Makefile
 └── README.md
 ```
